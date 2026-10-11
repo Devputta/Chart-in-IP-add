@@ -2,38 +2,69 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+/*
+  Palette swap: the components still use `emerald-*` classes, so remapping
+  the scale here recolors the whole app without touching them.
+  Light mode = warm paper + amber. Dark mode = midnight + amber.
+  600-900 are kept dark enough that white button text stays readable.
+*/
+@theme {
+  --color-emerald-50: #fffbeb;
+  --color-emerald-100: #fef3c7;
+  --color-emerald-200: #fde68a;
+  --color-emerald-300: #fcd34d;
+  --color-emerald-400: #f5a524;
+  --color-emerald-500: #d97706;
+  --color-emerald-600: #b45309;
+  --color-emerald-700: #92400e;
+  --color-emerald-800: #78350f;
+  --color-emerald-900: #5c2a0c;
+  --color-emerald-950: #3b1a06;
+
+  --font-sans: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
 @layer base {
   :root {
-    --bg-canvas: #f8fafc;
+    --bg-canvas: #faf7f2;
     --surface-card: #ffffff;
-    --surface-muted: #f1f5f9;
-    --border-color: #e2e8f0;
-    --text-main: #0f172a;
-    --text-sub: #475569;
+    --surface-muted: #f3eee6;
+    --border-color: #e6dfd3;
+    --text-main: #1c1917;
+    --text-sub: #57534e;
+    --accent: #f5a524;
   }
 
   .dark {
-    --bg-canvas: #0d1117;
-    --surface-card: #161b22;
-    --surface-muted: #1f242c;
-    --border-color: #2b323c;
-    --text-main: #f0f6fc;
-    --text-sub: #8b949e;
+    --bg-canvas: #0f1419;
+    --surface-card: #171d24;
+    --surface-muted: #1e2630;
+    --border-color: #2a3441;
+    --text-main: #e8e6e1;
+    --text-sub: #9aa4b0;
+    --accent: #f5a524;
   }
 
   body {
-    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-family: var(--font-sans);
     background-color: var(--bg-canvas);
     color: var(--text-main);
   }
-  
+
+  /* Headings use the mono face so the app has one recognisable voice */
+  h1, h2, h3 {
+    font-family: var(--font-mono);
+    letter-spacing: -0.02em;
+  }
+
   code, kbd, samp, pre, .font-mono {
-    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-family: var(--font-mono);
     font-feature-settings: "tnum" 1;
   }
 }
 
-/* Custom subtle scrollbar */
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -44,19 +75,18 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
+  background: #d6cfc2;
   border-radius: 9999px;
 }
 
 .dark ::-webkit-scrollbar-thumb {
-  background: #2b323c;
+  background: #2a3441;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
+  background: #b8ae9c;
 }
 
 .dark ::-webkit-scrollbar-thumb:hover {
-  background: #3e4754;
+  background: #f5a524;
 }
-
