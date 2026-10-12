@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+  CipherLink High-Contrast Security Theme:
+  Vibrant emerald green for crisp contrast on warm sandbox paper (#f3f0e8 / #fbfaf6)
+  and deep terminal charcoal (#0F1419 / #151B22 / #101216).
+  WCAG AA compliant contrast in both light and dark modes.
+*/
+@theme {
+  --color-emerald-50: #ecfdf5;
+  --color-emerald-100: #d1fae5;
+  --color-emerald-200: #a7f3d0;
+  --color-emerald-300: #6ee7b7;
+  --color-emerald-400: #34d399;
+  --color-emerald-500: #10b981;
+  --color-emerald-600: #059669;
+  --color-emerald-700: #047857;
+  --color-emerald-800: #065f46;
+  --color-emerald-900: #064e3b;
+  --color-emerald-950: #022c22;
+
+  /* Pull the cool slate greys toward warm paper tones */
+  --color-slate-50: #f3f0e8;
+  --color-slate-100: #ebe7dc;
+  --color-slate-200: #ddd8cb;
+  --color-slate-300: #c9c3b3;
+  --color-slate-400: #9a9588;
+  --color-slate-500: #77736a;
+  --color-slate-600: #5c5f66;
+  --color-slate-700: #3d4048;
+  --color-slate-800: #23262d;
+  --color-slate-900: #15171c;
+
+  --font-sans: 'Tinos', 'Times New Roman', Times, Georgia, serif;
+  --font-serif: 'Tinos', 'Times New Roman', Times, Georgia, serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+@layer base {
+  :root {
+    --bg-canvas: #f3f0e8;
+    --surface-card: #fbfaf6;
+    --surface-muted: #ebe7dc;
+    --border-color: #ddd8cb;
+    --text-main: #15171c;
+    --text-sub: #5c5f66;
+    --accent: #059669;
+    --accent-hover: #047857;
+    --accent-contrast: #ffffff;
+  }
+
+  .dark {
+    --bg-canvas: #101216;
+    --surface-card: #181b21;
+    --surface-muted: #1f232b;
+    --border-color: #272b33;
+    --text-main: #ece9e1;
+    --text-sub: #9097a3;
+    --accent: #10b981;
+    --accent-hover: #059669;
+    --accent-contrast: #022c22;
+  }
+
+  body {
+    font-family: 'Tinos', 'Times New Roman', Times, Georgia, serif;
+    background-color: var(--bg-canvas);
+    color: var(--text-main);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Tinos', 'Times New Roman', Times, Georgia, serif;
+    letter-spacing: -0.01em;
+  }
+
+  code, kbd, samp, pre, .font-mono {
+    font-family: var(--font-mono);
+    font-feature-settings: "tnum" 1;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cfc9bb;
+  border-radius: 9999px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #272b33;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a294;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
+}

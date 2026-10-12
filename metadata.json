@@ -1,0 +1,8 @@
+{
+  "name": "Remix CipherLink",
+  "description": "Two-person browser-encrypted messaging prototype featuring client-side AES-GCM cryptography and zero-knowledge channel relay.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
