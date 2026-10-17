@@ -327,3 +327,10 @@ for the complete license text.
   <br />
   Private by design. Ephemeral by default.
 </p>
+---------------------------------------
+## Legal
+
+* [License (MIT)](LICENSE)
+* [Copyright Notice](COPYRIGHT.md)
+* [Disclaimer](DISCLAIMER.md)
+* [Security Policy](SECURITY.md)
