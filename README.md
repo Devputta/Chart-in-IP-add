@@ -327,9 +327,11 @@ for the complete license text.
 * [Disclaimer](DISCLAIMER.md)
 * [Security Policy](SECURITY.md)
 
-<p align="center">  <a href="https://github.com/Devputta/Chart-in-IP-add/blob/main/QR%20for%20WEB/qrforge_1024px.png" target="_blank" rel="noopener noreferrer">    <img src="https://raw.githubusercontent.com/Devputta/Chart-in-IP-add/blob/main/QR%20for%20WEB/qrforge_1024px.png" alt="CipherLink QR Code" width="220" />  </a></p>
-
-
+<p align="center">
+  <a href="https://github.com/Devputta/Chart-in-IP-add/blob/main/QR%20for%20WEB/qrforge_1024px.png">
+    <img src="https://raw.githubusercontent.com/Devputta/Chart-in-IP-add/main/QR%20for%20WEB/qrforge_1024px.png" alt="QRForge Logo" width="220" />
+  </a>
+</p>
 ---
 
 <p align="center">
