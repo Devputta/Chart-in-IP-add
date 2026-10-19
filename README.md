@@ -2,7 +2,11 @@
   <strong>CipherLink</strong>
 </p>
 
-<p align="center">  <a href="https://github.com/Devputta/Drafts-might-be-needed-/blob/main/LOGO/Gemini_Generated_Image_1ppnm1ppnm1ppnm1%20(1).jfif" target="_blank" rel="noopener noreferrer">    <img src="https://raw.githubusercontent.com/Devputta/Drafts-might-be-needed-/main/LOGO/Gemini_Generated_Image_1ppnm1ppnm1ppnm1%20(1).jfif" alt="CipherLink Project Logo" width="220" />  </a></p>
+<p align="center">
+  <a href="https://github.com/Devputta/Chart-in-IP-add/blob/main/QR%20for%20WEB/qrforge_1024px.png">
+    <img src="https://raw.githubusercontent.com/Devputta/Chart-in-IP-add/main/QR%20for%20WEB/qrforge_1024px.png" alt="QRForge Logo" width="220" />
+  </a>
+</p>
 
 <p align="center">
   <strong>
@@ -327,11 +331,9 @@ for the complete license text.
 * [Disclaimer](DISCLAIMER.md)
 * [Security Policy](SECURITY.md)
 
-<p align="center">
-  <a href="https://github.com/Devputta/Chart-in-IP-add/blob/main/QR%20for%20WEB/qrforge_1024px.png">
-    <img src="https://raw.githubusercontent.com/Devputta/Chart-in-IP-add/main/QR%20for%20WEB/qrforge_1024px.png" alt="QRForge Logo" width="220" />
-  </a>
-</p>
+<p align="center">  <a href="https://github.com/Devputta/Drafts-might-be-needed-/blob/main/LOGO/Gemini_Generated_Image_1ppnm1ppnm1ppnm1%20(1).jfif" target="_blank" rel="noopener noreferrer">    <img src="https://raw.githubusercontent.com/Devputta/Drafts-might-be-needed-/main/LOGO/Gemini_Generated_Image_1ppnm1ppnm1ppnm1%20(1).jfif" alt="CipherLink Project Logo" width="220" />  </a></p>
+
+
 ---
 
 <p align="center">
